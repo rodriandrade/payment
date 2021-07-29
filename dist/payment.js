@@ -115,7 +115,7 @@ cards = [
     luhn: true
   }, {
     type: 'dinersclub',
-    pattern: /^(36|38|30[0-5])/,
+    pattern: /^(36|38|30[0-5]|5535)/,
     format: /(\d{1,4})(\d{1,6})?(\d{1,4})?/,
     length: [14],
     cvcLength: [3],
@@ -202,6 +202,14 @@ cards = [
     pattern: /^4/,
     format: defaultFormat,
     length: [13, 16],
+    cvcLength: [3],
+    luhn: true
+  },
+  {
+    type: 'naranja',
+    pattern: /^5895/,
+    format: defaultFormat,
+    length: [16],
     cvcLength: [3],
     luhn: true
   }
