@@ -204,8 +204,7 @@ cards = [
     length: [13, 16],
     cvcLength: [3],
     luhn: true
-  },
-  {
+  }, {
     type: 'naranja',
     pattern: /^5895/,
     format: defaultFormat,
